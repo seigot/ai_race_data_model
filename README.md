@@ -1,15 +1,15 @@
 # ai_race_score
 
 ## 本リポジトリについて
-ai_race のスコア集約ページです : https://github.com/seigot/ai_race <br>
+ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 <br>
 ## 途中結果
 
-チーム名と結果をご自由に更新下さい。 <br>
+チーム名とscoreをご自由に更新下さい。 <br>
 
-|  チーム名  |  結果  |　備考  |  リポジトリURL等  |
+|  チーム名  |  score  |　備考  |  リポジトリURL等  |
 | ---- | ---- | ---- | ---- |
-|  seigot  |  1周  |  n_epoch=2です  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
+|  seigot  |  1周  |  n_epoch=2  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
 |  A  |  -  |  -  |  -  |
 |  B  |  -  |  -  |  -  |
 |  C  |  -  |  -  |  -  |
