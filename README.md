@@ -1,13 +1,8 @@
-# ai_race_data_model
+# ai_race_score
 
 ## 本リポジトリについて
-ai_race 向けの学習モデル置き場です : https://github.com/seigot/ai_race <br>
+ai_race のスコア集約ページです : https://github.com/seigot/ai_race <br>
 <br>
-※ （注意）登録は公開データのみです。 <br>
-
-## model
-学習モデルディレクトリ
-
 ## 途中結果
 
 チーム名と結果をご自由に更新下さい。 <br>
