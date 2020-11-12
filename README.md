@@ -16,6 +16,7 @@ ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 |  D  |  -  |  -  |  -  |
 |  E  |  -  |  -  |  -  |
 |  F  |  -  |  -  |  -  |
+|  G  |  -  |  -  |  -  |
 
 ## Tips
 
