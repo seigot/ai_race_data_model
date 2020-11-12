@@ -9,7 +9,7 @@ ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 
 |  チーム名  |  score  |　備考  |  リポジトリURL等  |
 | ---- | ---- | ---- | ---- |
-|  seigot  |  1周  |  n_epoch=2  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
+|  seigot  |  1周  |  -  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
 |  A  |  -  |  -  |  -  |
 |  B  |  -  |  -  |  -  |
 |  C  |  -  |  -  |  -  |
