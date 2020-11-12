@@ -7,7 +7,7 @@ ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 
 チーム名とscoreをご自由に更新下さい。 <br>
 
-|  チーム名  |  score  |　備考  |  リポジトリURL等  |
+|  チーム名  |  score  |　備考  |  最新の学習モデルの、リポジトリURL等  |
 | ---- | ---- | ---- | ---- |
 |  seigot  |  1周  |  11/11時点  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
 |  A  |  -  |  -  |  -  |
