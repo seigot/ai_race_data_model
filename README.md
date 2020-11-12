@@ -19,7 +19,9 @@ ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 
 ## Tips
 
-trtファイル等の大きなデータは、以下の通り分割・結合することも可能です。<br>
+サイズの大きな学習モデルは、以下の通り分割・結合することも可能です。<br>
+<br>
+（例）sample_trt.pthを分割・結合する場合<br>
 <br>
 分割<br>
 
