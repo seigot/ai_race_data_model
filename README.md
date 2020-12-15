@@ -5,36 +5,13 @@ ai_race のscore集約ページです : https://github.com/seigot/ai_race <br>
 <br>
 ## 途中結果
 
-チーム名とscoreをご自由に更新下さい。 <br>
+近々、更新するつもりです。 <br>
 
 |  チーム名  |  score  |　備考  |  最新の学習モデルの、リポジトリURL等  |
 | ---- | ---- | ---- | ---- |
-|  seigot  |  1周  |  11/11時点  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
-|  A  |  -  |  -  |  -  |
-|  B  |  -  |  -  |  -  |
-|  C  |  -  |  -  |  -  |
-|  D  |  -  |  -  |  -  |
-|  E  |  -  |  -  |  -  |
-|  F  |  -  |  -  |  -  |
-|  G  |  -  |  -  |  -  |
-
-## Tips
-
-サイズの大きな学習モデルは、以下の通り分割・結合することも可能です。<br>
-<br>
-（例）sample_trt.pthを分割・結合する場合<br>
-<br>
-分割<br>
-
-```
-split -b 55m -a 1 sample_trt.pth sample_trt_p
-```
-
-結合
-
-```
-cat sample_trt_p_* > sample_trt.pth
-```
+|  (例)seigot  |  1周  |  11/11時点  |  https://github.com/seigot/ai_race_data_sample/blob/main/model/sample.pth  |
+|  -  |  -  |  -  |  -  |
+|  -  |  -  |  -  |  -  |
 
 ## 備考
 > [https://docs.github.com/ja/free-pro-team@latest/github/managing-large-files/conditions-for-large-files](https://docs.github.com/ja/free-pro-team@latest/github/managing-large-files/conditions-for-large-files) <br>
