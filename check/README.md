@@ -1,11 +1,5 @@
 # 動作確認用
 
-ダウンロードスクリプト
-
-```
-bash download.sh
-```
-
 以下は確認用の一覧表
 
 |  -  |  ダウンロード方法(コマンド)  |  ■ 動かし方  |  備考  |
@@ -17,3 +11,81 @@ bash download.sh
 |  E  |  wget https://github.com/F0CACC1A/ai_race/releases/download/v2.0/20210113_simplenet_trt.pth  |  python inference_from_image.py --trt_module --trt_model 20210113_simplenet_trt.pth --model simplenet  |  デフォルトのinference_from_image.pyでよさそう  |
 |  F  |  wget https://github.com/k-onishi/ai_race/releases/download/v0.2/20210101_model_trt.pth  |  "cd ~/catkin_ws/src/ai_race/ai_race/learning/scripts python inference_from_image.py --trt_module --trt_model 20210101_model_trt.pth"  |  デフォルトのinference_from_image.pyでよさそう  |
 |  G  |  wget https://github.com/kyad/ai_race/blob/main/ai_race/learning/scripts/20210105a-simplenet_trt_fp16.pth  |  python inference_from_image.py --model simplenet --trt_module --trt_model 20210105a-simplenet_trt_fp16.pth  |  "「simplenetの実装はフォーク前のリポジトリから変更しているので、ai_race/ai_race/learning/scripts以下はこのリポジトリの実装を使ってください。」のコメントより以下をコピーして動かすhttps://github.com/kyad/ai_race/tree/main/ai_race/learning/scripts"  |
+
+
+# 環境準備
+#### Step1.PC/JetsonNanoを用意して以下の通り接続する <br>
+
+Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する
+
+[Jetson Nano/PC間でROS接続する](https://qiita.com/seigot/items/a6eaebccfd427bb315b4)
+
+#### Step2.モデルをダウンロード
+
+以下の通り
+
+```
+mkdir -p ~/tmp; cd ~/tmp;
+git clone https://github.com/seigot/ai_race_score
+./ai_race_score/check/download.sh
+```
+
+#### Step3.実行
+
+PC側の準備
+
+```
+# シミュレータ画面を起動
+bash prepare.sh -l 1t
+```
+
+Jetson側の準備
+
+```
+# PC/JetsonNano間のネットワーク帯域が狭い場合に圧縮した画像を利用する
+# この場合、/image_raw --> /image_expをsubscribeするようにする
+roslaunch republish_image.launch
+```
+
+推論を実行する<br>
+<br>
+A
+
+```
+xxx
+```
+
+B
+```
+xxx
+```
+
+C
+
+```
+xxx
+```
+
+D
+
+```
+xxx
+```
+
+E
+
+```
+xxx
+```
+
+F
+
+```
+xxx
+```
+
+G
+
+```
+xxx
+```
