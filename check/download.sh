@@ -9,7 +9,7 @@ wget https://github.com/sahitaka/ai_race/releases/download/v1.2/0115_with_noise_
 git clone https://github.com/sahitaka/ai_race ai_race.sahitaka
 
 #C
-wget https://github.com/kenjirotorii/ai_race/blob/main/ai_race/reinforcement_learning/trt_model/dqn_20210114_trt.pth
+curl --output dqn_20210114_trt.pth https://raw.githubusercontent.com/kenjirotorii/ai_race/main/ai_race/reinforcement_learning/trt_model/dqn_20210114_trt.pth
 git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 
 #D
@@ -25,5 +25,5 @@ wget https://github.com/k-onishi/ai_race/releases/download/v0.2/20210101_model_t
 git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
 
 #G
-wget https://github.com/kyad/ai_race/blob/main/ai_race/learning/scripts/20210105a-simplenet_trt_fp16.pth
+curl --output 20210105a-simplenet_trt_fp16.pth https://raw.githubusercontent.com/kyad/ai_race/main/ai_race/learning/scripts/20210105a-simplenet_trt_fp16.pth
 git clone https://github.com/kyad/ai_race ai_race.kyad
