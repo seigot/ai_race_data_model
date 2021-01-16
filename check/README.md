@@ -52,40 +52,47 @@ roslaunch image_republish.launch
 A
 
 ```
-xxx
+cd ~/tmp/ai_race.kenkenjlab/ai_race/learning/scripts
+python inference_from_image.py --trt_module --trt_model ~/tmp/20210114_ddqn_per_ckpt0109_trt.pth
 ```
 
 B
 ```
-xxx
+cd ~/tmp/ai_race.sahitaka/ai_race/learning/scripts
+python inference_from_image.py --trt_module --trt_model ~/tmp/0115_with_noise_trt.pth
 ```
 
 C
 
 ```
-xxx
+cd ~/tmp/ai_race.kenjirotorii/ai_race/reinforcement_learning/scripts
+python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210114_trt.pth
 ```
 
 D
 
 ```
-xxx
+cd ~/tmp/ai_race.anchobi-no/ai_race/learning/scripts
+python inference_from_image.py --model simplenet --pretrained_model ~/tmp/sim_race_only_good_level2_epoch.21.pth
 ```
 
 E
 
 ```
-xxx
+cd ~/tmp/ai_race.F0CACC1A/ai_race/learning/scripts
+python inference_from_image.py --trt_module --trt_model ~/tmp/20210113_simplenet_trt.pth --model simplenet
 ```
 
 F
 
 ```
-xxx
+cd ~/tmp/ai_race.k-onishi/ai_race/learning/scripts 
+python inference_from_image.py --trt_module --trt_model ~/tmp/20210101_model_trt.pth
 ```
 
 G
 
 ```
-xxx
+cd ~/tmp/ai_race.kyad/ai_race/learning/scripts
+python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/20210105a-simplenet_trt_fp16.pth
 ```
