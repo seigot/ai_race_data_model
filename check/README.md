@@ -14,13 +14,13 @@
 
 
 # 環境準備
-#### Step1.PC/JetsonNanoを用意して以下の通り接続する <br>
+## Step1.PC/JetsonNanoを用意して以下の通り接続する <br>
 
 Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する
 
 [Jetson Nano/PC間でROS接続する](https://qiita.com/seigot/items/a6eaebccfd427bb315b4)
 
-#### Step2.モデルをダウンロード
+## Step2.モデルをダウンロード
 
 以下の通り
 
@@ -30,7 +30,7 @@ git clone https://github.com/seigot/ai_race_score
 ./ai_race_score/check/download.sh
 ```
 
-#### Step3.実行
+## Step3.実行
 
 PC側の準備
 
