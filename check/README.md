@@ -22,7 +22,7 @@ Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する
 
 ## Step2.モデルをダウンロード
 
-以下の通り
+Jetson Nano側で以下を実行
 
 ```
 mkdir -p ~/tmp; cd ~/tmp;
