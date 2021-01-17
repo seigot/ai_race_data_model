@@ -44,7 +44,7 @@ Jetson側の準備
 ```
 # PC/JetsonNano間のネットワーク帯域が狭い場合に圧縮した画像を利用する
 # この場合、/image_raw --> /image_expをsubscribeするようにする
-roslaunch image_republish.launch
+roslaunch sim_environment image_republish.launch
 ```
 
 推論を実行する<br>
