@@ -22,7 +22,9 @@ Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する
 
 ## Step2.モデルをダウンロード
 
-Jetson Nano側で以下を実行
+Jetson Nano側で以下を実行<br>
+モデルダウンロード + リリース用リポジトリのcloneを行う。<br>
+（リポジトリは、`~/tmp/`以下に、`git clone http://github.com/seigot/ai_race ai_race.seigot` のように置く。）
 
 ```
 mkdir -p ~/tmp; cd ~/tmp;
