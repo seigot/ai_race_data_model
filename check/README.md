@@ -54,47 +54,68 @@ roslaunch sim_environment image_republish.launch
 A
 
 ```
-cd ~/tmp/ai_race.kenkenjlab/ai_race/learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.kenkenjlab ai_race
+cd ai_race/ai_race/learning/scripts
 python inference_from_image.py --trt_module --trt_model ~/tmp/20210114_ddqn_per_ckpt0109_trt.pth
 ```
 
 B
 ```
-cd ~/tmp/ai_race.sahitaka/ai_race/learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.sahitaka ai_race
+cd ai_race/ai_race/learning/scripts
 python inference_from_image.py --trt_module --trt_model ~/tmp/0115_with_noise_trt.pth
 ```
 
 C
 
 ```
-cd ~/tmp/ai_race.kenjirotorii/ai_race/reinforcement_learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.kenjirotorii ai_race
+cd ai_race/ai_race/reinforcement_learning/scripts
 python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210114_trt.pth
 ```
 
 D
 
 ```
-cd ~/tmp/ai_race.anchobi-no/ai_race/learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.anchobi-no ai_race
+cd ai_race/ai_race/learning/scripts
 python inference_from_image.py --model simplenet --pretrained_model ~/tmp/sim_race_only_good_level2_epoch.21.pth
 ```
 
 E
 
 ```
-cd ~/tmp/ai_race.F0CACC1A/ai_race/learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.F0CACC1A ai_race
+cd ai_race/ai_race/learning/scripts
 python inference_from_image.py --trt_module --trt_model ~/tmp/20210113_simplenet_trt.pth --model simplenet
 ```
 
 F
 
 ```
-cd ~/tmp/ai_race.k-onishi/ai_race/learning/scripts 
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.k-onishi ai_race
+cd ai_race/ai_race/learning/scripts 
 python inference_from_image.py --trt_module --trt_model ~/tmp/20210101_model_trt.pth
 ```
 
 G
 
 ```
-cd ~/tmp/ai_race.kyad/ai_race/learning/scripts
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.kyad ai_race
+cd ai_race/ai_race/learning/scripts 
 python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/20210105a-simplenet_trt_fp16.pth
 ```
