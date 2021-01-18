@@ -78,7 +78,8 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.kenjirotorii ai_race
 cd ai_race/ai_race/reinforcement_learning/scripts
-python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210114_trt.pth
+#python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210114_trt.pth
+python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210109_jetson_trt.pth
 ```
 
 D
