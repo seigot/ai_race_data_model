@@ -13,7 +13,7 @@ curl --output dqn_20210114_trt.pth https://raw.githubusercontent.com/kenjirotori
 git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 
 #D
-wget https://github.com/anchobi-no/ai_race/releases/download/296fe39/sim_race_only_good_level2_epoch.21.pth
+wget https://github.com/anchobi-no/ai_race/releases/download/296fe39/road_following_model_trt.pth
 git clone https://github.com/anchobi-no/ai_race ai_race.anchobi-no
 
 #E
