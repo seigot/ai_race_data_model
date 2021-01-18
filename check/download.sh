@@ -9,7 +9,7 @@ wget https://github.com/sahitaka/ai_race/releases/download/v1.2/0115_with_noise_
 git clone https://github.com/sahitaka/ai_race ai_race.sahitaka
 
 #C
-curl --output dqn_20210114_trt.pth https://raw.githubusercontent.com/kenjirotorii/ai_race/main/ai_race/reinforcement_learning/trt_model/dqn_20210109_jetson_trt.pth
+curl --output dqn_20210109_jetson_trt.pth https://raw.githubusercontent.com/kenjirotorii/ai_race/main/ai_race/reinforcement_learning/trt_model/dqn_20210109_jetson_trt.pth
 git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 
 #D
