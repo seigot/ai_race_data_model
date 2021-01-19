@@ -29,6 +29,12 @@ PC側の準備
 bash prepare.sh -l 1t
 ```
 
+必要に応じてGAZEBOの`RealTimeFactor`を調整する。（例.0.4にする場合）
+
+```
+gz physics -u 400
+```
+
 Jetson側の準備
 
 ```
