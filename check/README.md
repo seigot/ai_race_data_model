@@ -87,10 +87,11 @@ D
 ```
 # 事前にこれをしていること前提
 # git clone https://github.com/anchobi-no/ai_race ai_race.anchobi-no
+# git clone https://github.com/seigot/ai_race ai_race.seigot
 
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
-cp -r ~/tmp/ai_race.anchobi-no ai_race
+cp -r ~/tmp/ai_race.seigot ai_race
 cd ai_race/ai_race/learning/scripts
 python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/road_following_model_trt.pth
 ```
