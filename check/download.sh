@@ -15,6 +15,7 @@ git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 #D
 wget https://github.com/anchobi-no/ai_race/releases/download/296fe39/road_following_model_trt.pth
 git clone https://github.com/anchobi-no/ai_race ai_race.anchobi-no
+git clone https://github.com/seigot/ai_race ai_race.seigot
 
 #E
 wget https://github.com/F0CACC1A/ai_race/releases/download/v2.0/20210113_simplenet_trt.pth
