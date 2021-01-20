@@ -43,13 +43,14 @@ gz physics -u 300
 Jetson側の準備
 
 ```
-# PC/JetsonNano間のネットワーク帯域が狭い場合、圧縮した画像を利用すると効率が良い
-# 通信経路では圧縮画像を用いて、jetsonNano側では /image_raw の代わりに /image_exp をpublishするには以下を実行する
-roslaunch sim_environment image_republish.launch
-
-# この場合、推論スクリプトでの画像データsubscribe時に、/image_raw の代わりに /image_expをsubscribeするようにする
-# カレントディレクトリ以下の推論スクリプト中の "image_raw" を "image_exp" に置換すると可能になる
-find . -name inference_from_image.py | xargs sed -i -e "s/image_raw/image_exp/"
+# 有線LAN(1Gbps)環境を使う場合は不要
+### PC/JetsonNano間のネットワーク帯域が狭い場合、圧縮した画像を利用すると効率が良い
+### 通信経路では圧縮画像を用いて、jetsonNano側では /image_raw の代わりに /image_exp をpublishするには以下を実行する
+##roslaunch sim_environment image_republish.launch
+##
+### この場合、推論スクリプトでの画像データsubscribe時に、/image_raw の代わりに /image_expをsubscribeするようにする
+### カレントディレクトリ以下の推論スクリプト中の "image_raw" を "image_exp" に置換すると可能になる
+##find . -name inference_from_image.py | xargs sed -i -e "s/image_raw/image_exp/"
 ```
 
 推論を実行する<br>
