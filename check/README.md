@@ -79,9 +79,9 @@ C
 ```
 # 事前にこれをしていること前提
 # git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
+# $ gz physics -u 350
 
 cd ~/catkin_ws/src
-sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.kenjirotorii ai_race
 cd ai_race/ai_race/reinforcement_learning/scripts
 #python inference_from_image.py --trt_module --trt_model ~/tmp/dqn_20210114_trt.pth
