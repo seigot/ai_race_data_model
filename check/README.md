@@ -29,10 +29,15 @@ PC側の準備
 bash prepare.sh -l 1t
 ```
 
-必要に応じてGAZEBOの`RealTimeFactor`を調整する。（例.0.4にする場合）
+必要に応じてGAZEBOの`RealTimeFactor`を調整する。<br>
+`RealTimeFactor`は1.0に近いほうが実時間通りに動作するので望ましい。ただ一方で、`ROS Time`の調整に役立つ。<br>
+例えば、`RealTimeFactor`を1.0にする場合、実時間の10secは`ROS Time`の10secに対応するが、<br>
+`RealTimeFactor`を0.3にする場合、実時間の10secを`ROS Time`の3.3secに対応させることが可能。<br>
+（`ROSTime`の世界で0.33secで処理したい場合でも、実時間で10sec掛けてよいので計算資源が乏しい場合でも実質高速に計算させているかのようにできる。）<br>
 
 ```
-gz physics -u 400
+#（例. RealTimeFactor 0.3にする場合）
+gz physics -u 300
 ```
 
 Jetson側の準備
