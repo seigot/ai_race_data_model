@@ -107,6 +107,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.seigot ai_race
 cd ai_race/ai_race/learning/scripts
+# python inference_from_image.py --model simplenet --pretrained_model sim_race_only_good_level2_epoch.21.pth
 python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/road_following_model_trt.pth
 ```
 
