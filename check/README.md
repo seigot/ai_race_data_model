@@ -102,6 +102,7 @@ D
 # 事前にこれをしていること前提
 # git clone https://github.com/anchobi-no/ai_race ai_race.anchobi-no
 # git clone https://github.com/seigot/ai_race ai_race.seigot
+# $ gz physics -u 300
 
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
@@ -130,6 +131,7 @@ F
 ```
 # 事前にこれをしていること前提
 # git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
+# $ gz physics -u 300
 
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
