@@ -106,10 +106,17 @@ D
 
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
-cp -r ~/tmp/ai_race.seigot ai_race
+cp -r ~/tmp/ai_race.anchobi-no ai_race
 cd ai_race/ai_race/learning/scripts
-# python inference_from_image.py --model simplenet --pretrained_model ~/tmp/sim_race_only_good_level2_epoch.21.pth
-python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/road_following_model_trt.pth
+## copy from upstream
+cp ~/tmp/ai_race.seigot/ai_race/learning/scripts/inference_from_image.py .
+cp ~/tmp/ai_race.seigot/ai_race/learning/scripts/samplenet.py .
+cp ~/tmp/ai_race.seigot/ai_race/learning/scripts/samplenet_analog.py .
+
+# python inference_from_image.py --model simplenet --pretrained_model ~/tmp/sim_race_only_go\
+od_level2_epoch.21.pth
+python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/road_followi\
+ng_model_trt.pth
 ```
 
 E
