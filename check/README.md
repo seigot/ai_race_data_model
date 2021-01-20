@@ -22,7 +22,7 @@ git clone https://github.com/seigot/ai_race_score
 
 ## Step3.実行
 
-PC側の準備
+### PC側の準備
 
 ```
 # シミュレータ画面を起動
@@ -40,7 +40,7 @@ bash prepare.sh -l 1t
 gz physics -u 300
 ```
 
-Jetson側の準備
+### Jetson側の準備
 
 ```
 # 有線LAN(1Gbps)環境を使う場合は不要
