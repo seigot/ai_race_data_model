@@ -58,6 +58,7 @@ A
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/kenkenjlab/ai_race ai_race.kenkenjlab
 # $ gz physics -u 300
 
@@ -71,6 +72,7 @@ python inference_from_image.py --trt_module --trt_model ~/tmp/20210114_ddqn_per_
 B
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/sahitaka/ai_race ai_race.sahitaka
 # $ gz physics -u 300
 
@@ -85,6 +87,7 @@ C
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 # $ gz physics -u 300
 
@@ -100,6 +103,7 @@ D
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/anchobi-no/ai_race ai_race.anchobi-no
 # git clone https://github.com/seigot/ai_race ai_race.seigot
 # $ gz physics -u 300
@@ -123,6 +127,7 @@ E
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/F0CACC1A/ai_race ai_race.F0CACC1A
 # $ gz physics -u 300
 
@@ -137,6 +142,7 @@ F
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
 # $ gz physics -u 300
 
@@ -151,6 +157,7 @@ G
 
 ```
 # 事前にこれをしていること前提
+# cd ~/tmp
 # git clone https://github.com/kyad/ai_race ai_race.kyad
 # $ gz physics -u 300
 
