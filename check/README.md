@@ -149,7 +149,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.k-onishi ai_race
 cd ai_race/ai_race/your_environment/scripts/reinforce_learning
-python inference_from_image.py --pretrained_model ~/tmp/god_phenix.pth
+python inference_from_image.py --pretrained_model ~/tmp/god_phoenix.pth
 ```
 
 G
