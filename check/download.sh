@@ -22,7 +22,8 @@ wget https://github.com/F0CACC1A/ai_race/releases/download/v2.0/20210113_simplen
 git clone https://github.com/F0CACC1A/ai_race ai_race.F0CACC1A
 
 #F
-wget https://github.com/k-onishi/ai_race/releases/download/v0.2/20210101_model_trt.pth
+#wget https://github.com/k-onishi/ai_race/releases/download/v0.2/20210101_model_trt.pth
+wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
 git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
 
 #G
