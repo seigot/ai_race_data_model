@@ -172,6 +172,7 @@ python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/
 ```
 # Adelieさん
 
+# 事前にこれをしていること前提
 # cd ~/tmp
 # git clone hhttps://github.com/adelie7273/ai_race ai_race.adelie7273
 # wget https://github.com/adelie7273/ai_race/releases/download/v0.2/sim_race_mymodel_epoch.21_tgt34_trt.pth
@@ -184,4 +185,18 @@ cd ai_race/ai_race/learning/config
 echo "Discretization_number = 21" > learning_config.py 
 cd ../scripts 
 python inference_from_image.py --trt_module --trt_model ~/tmp/sim_race_mymodel_epoch.21_tgt34_trt.pth
+```
+
+# 当日準備
+
+```
+- スクリーンセーバー無効化
+
+# 事前準備済の場合
+1.動画ファイルクリック
+2.全画面表示
+3.スタート⇒画面共有
+4.(画面共有ボタンを非表示にする)
+--- 終わるまで待つ
+6.windowsボタンで準備中画面に遷移
 ```
