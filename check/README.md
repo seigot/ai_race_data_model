@@ -1,9 +1,10 @@
-# 動作確認用
+# 動作確認用 (20210123)
 
 # 環境準備
 ## Step1.PC/JetsonNanoを用意して以下の通り接続する <br>
 
-Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する
+Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する <br>
+Jetson Nano-PCは有線で繋ぐのが良い。クロスケーブルで直接接続可能。 <br>
 
 [Jetson Nano/PC間でROS接続する](https://qiita.com/seigot/items/a6eaebccfd427bb315b4)
 
