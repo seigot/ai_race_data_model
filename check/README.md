@@ -166,3 +166,22 @@ cp -r ~/tmp/ai_race.kyad ai_race
 cd ai_race/ai_race/learning/scripts 
 python inference_from_image.py --model simplenet --trt_module --trt_model ~/tmp/20210105a-simplenet_trt_fp16.pth
 ```
+
+その他の有志の方々(参考記録)
+
+```
+# Adelieさん
+
+# cd ~/tmp
+# git clone hhttps://github.com/adelie7273/ai_race ai_race.adelie7273
+# wget https://github.com/adelie7273/ai_race/releases/download/v0.2/sim_race_mymodel_epoch.21_tgt34_trt.pth
+# $ gz physics -u 300
+
+cd ~/catkin_ws/src
+sudo rm -rf ai_race
+cp -r ~/tmp/ai_race.adelie7273 ai_race
+cd ai_race/ai_race/learning/config
+echo "Discretization_number = 21" > learning_config.py 
+cd ../scripts 
+python inference_from_image.py --trt_module --trt_model ~/tmp/sim_race_mymodel_epoch.21_tgt34_trt.pth
+```
