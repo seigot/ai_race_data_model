@@ -62,14 +62,19 @@ C
 
 ```
 # 事前にこれをしていること前提
-# cd ~/tmp
-# git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
+cd ~/tmp
+git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
 # $ gz physics -u 300
 
+# 準備
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.kenjirotorii ai_race
-cd ai_race/ai_race/your_environment/scripts
+cd ai_race/scripts
+prepare.sh -l 1c # 1s,1f,1w
+
+# 実行
+cd ~/catkin_ws/src/ai_race/ai_race/your_environment/scripts
 python inference_from_image.py --pretrained_model=/home/jetson/catkin_ws/src/ai_race/ai_race/your_environment/models/submit_20210326.pth
 ```
 
@@ -83,14 +88,19 @@ E
 
 ```
 # 事前にこれをしていること前提
-# cd ~/tmp
-# git clone https://github.com/F0CACC1A/ai_race ai_race.F0CACC1A
-# wget https://github.com/F0CACC1A/ai_race/releases/download/v3.0/20210324a_101_simplenet_trt.pth
+cd ~/tmp
+git clone https://github.com/F0CACC1A/ai_race ai_race.F0CACC1A
+wget https://github.com/F0CACC1A/ai_race/releases/download/v3.0/20210324a_101_simplenet_trt.pth
 
+# 準備
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.F0CACC1A ai_race
-cd ai_race/ai_race/learning/scripts
+cd ai_race/scripts
+prepare.sh -l 1c # 1s,1f,1w
+
+# 実行
+cd ~/catkin_ws/src/ai_race/ai_race/learning/scripts
 python inference_from_image.py --trt_module --trt_model ~/tmp/20210324a_101_simplenet_trt.pth --model simplenet
 ```
 
@@ -98,14 +108,19 @@ F
 
 ```
 # 事前にこれをしていること前提
-# cd ~/tmp
-# git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
-# wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
+cd ~/tmp
+git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
+wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
 
+# 準備
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.k-onishi ai_race
-cd ai_race/ai_race/your_environment/scripts/reinforce_learning
+cd ai_race/scripts
+prepare.sh -l 1c # 1s,1f,1w
+
+# 実行
+cd ~/catkin_ws/src/ai_race/ai_race/your_environment/scripts/reinforce_learning
 python inference_from_image.py --pretrained_model ~/tmp/god_phoenix.pth
 ```
 
