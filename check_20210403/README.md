@@ -1,12 +1,10 @@
-# readme
-
-# 動作確認用 (20210123)
+# 動作確認用 (20210403)
 
 # 環境準備
 ## Step1.PC/JetsonNanoを用意して以下の通り接続する <br>
 
 Jetson Nano/PCのIPアドレスはそれぞれ読み変えて設定する <br>
-Jetson Nano-PCは有線で繋ぐのが良い。クロスケーブルで直接接続可能。 <br>
+Jetson Nano-PCは有線で繋いで下さい。ネットワーク遅延の影響をなくすため。クロスケーブルで直接接続可能。 <br>
 
 [Jetson Nano/PC間でROS接続する](https://qiita.com/seigot/items/a6eaebccfd427bb315b4)
 
@@ -14,14 +12,7 @@ Jetson Nano-PCは有線で繋ぐのが良い。クロスケーブルで直接接
 
 Jetson Nano側で以下を実行<br>
 （リポジトリは、`~/tmp/`以下に、`git clone http://github.com/seigot/ai_race ai_race.seigot` のように置く。）<br>
-<br>
-ダウンロード用スクリプトの中身は[こちら](https://github.com/seigot/ai_race_score/blob/main/check/download.sh)<br>
 
-```
-mkdir -p ~/tmp; cd ~/tmp;
-git clone https://github.com/seigot/ai_race_score
-./ai_race_score/check/download.sh
-```
 
 ## Step3.実行
 
@@ -29,7 +20,10 @@ git clone https://github.com/seigot/ai_race_score
 
 ```
 # シミュレータ画面を起動
-bash prepare.sh -l 1t
+bash prepare.sh -l 1c
+bash prepare.sh -l 1s
+bash prepare.sh -l 1f
+bash prepare.sh -l 1w
 ```
 
 必要に応じてGAZEBOの`RealTimeFactor`を調整する。<br>
@@ -44,17 +38,6 @@ gz physics -u 300
 ```
 
 ### Jetson側の準備
-
-```
-# 有線LAN(1Gbps)環境を使う場合は不要
-### PC/JetsonNano間のネットワーク帯域が狭い場合、圧縮した画像を利用すると効率が良い
-### 通信経路では圧縮画像を用いて、jetsonNano側では /image_raw の代わりに /image_exp をpublishするには以下を実行する
-##roslaunch sim_environment image_republish.launch
-##
-### この場合、推論スクリプトでの画像データsubscribe時に、/image_raw の代わりに /image_expをsubscribeするようにする
-### カレントディレクトリ以下の推論スクリプト中の "image_raw" を "image_exp" に置換すると可能になる
-##find . -name inference_from_image.py | xargs sed -i -e "s/image_raw/image_exp/"
-```
 
 推論を実行する<br>
 <br>
