@@ -91,7 +91,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.F0CACC1A ai_race
 cd ai_race/ai_race/learning/scripts
-python inference_from_image.py --trt_module --trt_model 20210324a_101_simplenet_trt.pth --model simplenet
+python inference_from_image.py --trt_module --trt_model ~/tmp/20210324a_101_simplenet_trt.pth --model simplenet
 ```
 
 F
@@ -100,6 +100,7 @@ F
 # 事前にこれをしていること前提
 # cd ~/tmp
 # git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
+# wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
 
 cd ~/catkin_ws/src
 sudo rm -rf ai_race
