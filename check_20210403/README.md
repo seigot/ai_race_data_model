@@ -71,7 +71,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.kenjirotorii ai_race
 cd ai_race/scripts
-prepare.sh -l 1c # 1s,1f,1w
+bash prepare.sh -l 1c # 1s,1f,1w
 
 # 実行
 cd ~/catkin_ws/src/ai_race/ai_race/your_environment/scripts
@@ -97,7 +97,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.F0CACC1A ai_race
 cd ai_race/scripts
-prepare.sh -l 1c # 1s,1f,1w
+bash prepare.sh -l 1c # 1s,1f,1w
 
 # 実行
 cd ~/catkin_ws/src/ai_race/ai_race/learning/scripts
@@ -117,7 +117,7 @@ cd ~/catkin_ws/src
 sudo rm -rf ai_race
 cp -r ~/tmp/ai_race.k-onishi ai_race
 cd ai_race/scripts
-prepare.sh -l 1c # 1s,1f,1w
+bash prepare.sh -l 1c # 1s,1f,1w
 
 # 実行
 cd ~/catkin_ws/src/ai_race/ai_race/your_environment/scripts/reinforce_learning
