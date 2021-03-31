@@ -26,6 +26,7 @@ https://github.com/F0CACC1A/ai_race/releases/tag/v3.0
 
 ■ 学習モデル
 20210324a_101_simplenet_trt.pth
+wget https://github.com/F0CACC1A/ai_race/releases/download/v3.0/20210324a_101_simplenet_trt.pth
 
 ■ 動かし方
 python inference_from_image.py --trt_module --trt_model 20210324a_101_simplenet_trt.pth --model simplenet
@@ -41,6 +42,7 @@ https://github.com/k-onishi/ai_race/releases/tag/v1.0
 
 ■モデル
 god_phoenix.pth
+wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
 
 ■動かし方
 cd ~/catkin_ws/src
