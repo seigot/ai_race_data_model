@@ -13,6 +13,12 @@ Jetson Nano-PCは有線で繋いで下さい。ネットワーク遅延の影響
 Jetson Nano側で以下を実行<br>
 （リポジトリは、`~/tmp/`以下に、`git clone http://github.com/seigot/ai_race ai_race.seigot` のように置く。）<br>
 
+```
+cd ~/tmp
+git clone https://github.com/kenjirotorii/ai_race ai_race.kenjirotorii
+git clone https://github.com/F0CACC1A/ai_race ai_race.F0CACC1A
+git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
+```
 
 ## Step3.実行
 
