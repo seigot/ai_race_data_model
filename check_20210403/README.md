@@ -110,7 +110,8 @@ F
 # 事前にこれをしていること前提
 cd ~/tmp
 git clone https://github.com/k-onishi/ai_race ai_race.k-onishi
-wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
+#wget https://github.com/k-onishi/ai_race/releases/download/v1.0/god_phoenix.pth
+wget https://github.com/k-onishi/ai_race/releases/download/v2.0/sphere.pth
 
 # 準備
 cd ~/catkin_ws/src
@@ -121,7 +122,8 @@ bash prepare.sh -l 1c # 1s,1f,1w
 
 # 実行
 cd ~/catkin_ws/src/ai_race/ai_race/your_environment/scripts/reinforce_learning
-python inference_from_image.py --pretrained_model ~/tmp/god_phoenix.pth
+#python inference_from_image.py --pretrained_model ~/tmp/god_phoenix.pth
+python inference_from_image.py --pretrained_model sphere.pth
 ```
 
 G
